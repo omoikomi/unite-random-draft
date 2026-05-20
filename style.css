@@ -537,3 +537,41 @@ html, body {
 
 /* 単列モード(pickCount < 10) は下スロット行を非表示 */
 #view-draft.single-row .slot-row.bottom { display: none; }
+
+/* ランダムピックボタン */
+.random-btns {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.random-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  white-space: nowrap;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+.random-btn .rb-icon { font-size: 16px; line-height: 1; }
+.random-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.random-btn:active:not(:disabled) { transform: scale(0.97); }
+.random-btn:disabled { opacity: 0.32; cursor: not-allowed; }
+.random-btn.all { border-color: rgba(245, 196, 81, 0.40); color: var(--r-sup); }
+.random-btn.all:hover:not(:disabled) {
+  background: rgba(245, 196, 81, 0.14);
+  border-color: var(--r-sup);
+  color: #ffd97a;
+}

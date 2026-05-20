@@ -73,6 +73,20 @@
     <!-- 下スロット (2,3,6,7,10 の順で並ぶ) -->
     <div class="slot-row bottom" id="rowBottom"></div>
 
+    <!-- ランダムピックボタン (位置はJSで slot10 の隣に挿入) -->
+    <template id="randomBtnsTemplate">
+      <div class="random-btns">
+        <button type="button" id="oneRandomBtn" class="random-btn">
+          <span class="rb-icon">🎲</span>
+          <span class="rb-label">1 Pick</span>
+        </button>
+        <button type="button" id="allRandomBtn" class="random-btn all">
+          <span class="rb-icon">⚡</span>
+          <span class="rb-label">ALL</span>
+        </button>
+      </div>
+    </template>
+
     <!-- 操作ボタン -->
     <div class="draft-actions">
       <button id="resetBtn"   class="btn-mini">リセット</button>

@@ -241,11 +241,13 @@ function renderDraft() {
     // 単列モード: 上行のみ、1..total を順番に表示
     draftView.classList.add("single-row");
     for (let i = 1; i <= total; i++) rowTop.appendChild(buildSlot(i));
+    rowTop.appendChild(buildRandomBtns());
   } else {
     // 通常モード: TOP_ORDER / BOTTOM_ORDER の順
     draftView.classList.remove("single-row");
     for (const idx of TOP_ORDER)    if (idx <= total) rowTop.appendChild(buildSlot(idx));
     for (const idx of BOTTOM_ORDER) if (idx <= total) rowBottom.appendChild(buildSlot(idx));
+    rowBottom.appendChild(buildRandomBtns());
   }
 
   const pool = document.getElementById("pool");
@@ -263,6 +265,14 @@ function renderDraft() {
   });
 
   refreshSlots();
+}
+
+function buildRandomBtns() {
+  const tpl = document.getElementById("randomBtnsTemplate");
+  const node = tpl.content.firstElementChild.cloneNode(true);
+  node.querySelector("#oneRandomBtn").addEventListener("click", onOneRandom);
+  node.querySelector("#allRandomBtn").addEventListener("click", onAllRandom);
+  return node;
 }
 
 function buildSlot(selIndex) {
@@ -316,6 +326,37 @@ function onPick(poolIdx, el) {
     el.classList.remove("picking");
     el.classList.add("picked");
   }, 340);
+}
+
+// ── ランダムピック ─────────────────────────────────────
+function getUnpickedPickEls() {
+  return Array.from(document.querySelectorAll(".pick"))
+    .filter(el => !el.classList.contains("picked") && !el.classList.contains("picking"));
+}
+
+function onOneRandom() {
+  if (state.picks.length >= state.pickCount) return;
+  const candidates = getUnpickedPickEls();
+  if (candidates.length === 0) return;
+  const el = candidates[Math.floor(Math.random() * candidates.length)];
+  const idx = parseInt(el.dataset.idx, 10);
+  onPick(idx, el);
+}
+
+function onAllRandom() {
+  let candidates = getUnpickedPickEls();
+  let i = 0;
+  const tick = () => {
+    if (state.picks.length >= state.pickCount) return;
+    candidates = getUnpickedPickEls();
+    if (candidates.length === 0) return;
+    const el = candidates[Math.floor(Math.random() * candidates.length)];
+    const idx = parseInt(el.dataset.idx, 10);
+    onPick(idx, el);
+    i++;
+    setTimeout(tick, 220);  // 連続ピック演出
+  };
+  tick();
 }
 
 function onReset() {

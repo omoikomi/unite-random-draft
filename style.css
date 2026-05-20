@@ -99,9 +99,18 @@ html, body {
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
-  width: 180px;
+  width: 280px;
   height: 52px;
 }
+.num-btn.jump {
+  flex: 0 0 52px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-right: 1px solid var(--border);
+}
+.num-btn.jump + .num-btn { border-left: none; }
+.num-picker .num-btn.jump:last-child { border-right: none; border-left: 1px solid var(--border); }
 .num-picker:hover { border-color: var(--border-hi); }
 .num-btn {
   flex: 0 0 48px;

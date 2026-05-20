@@ -1,0 +1,457 @@
+[
+  {
+    "file": "001_Atk_Venusaur.png",
+    "name": "001Venusaur",
+    "role": "Atk"
+  },
+  {
+    "file": "002_Bal_Charizard.png",
+    "name": "002Charizard",
+    "role": "Bal"
+  },
+  {
+    "file": "003_Sup_Eldegoss.png",
+    "name": "003Eldegoss",
+    "role": "Sup"
+  },
+  {
+    "file": "004_Atk_Pikachu.png",
+    "name": "004Pikachu",
+    "role": "Atk"
+  },
+  {
+    "file": "005_Atk_AlolanNinetales.png",
+    "name": "005AlolanNinetales",
+    "role": "Atk"
+  },
+  {
+    "file": "006_Sup_Wigglytuff.png",
+    "name": "006Wigglytuff",
+    "role": "Sup"
+  },
+  {
+    "file": "007_Bal_Machamp.png",
+    "name": "007Machamp",
+    "role": "Bal"
+  },
+  {
+    "file": "008_Def_Slowbro.png",
+    "name": "008Slowbro",
+    "role": "Def"
+  },
+  {
+    "file": "009_Spd_Gengar.png",
+    "name": "009Gengar",
+    "role": "Spd"
+  },
+  {
+    "file": "010_Sup_MrMime.png",
+    "name": "010MrMime",
+    "role": "Sup"
+  },
+  {
+    "file": "011_Def_Snorlax.png",
+    "name": "011Snorlax",
+    "role": "Def"
+  },
+  {
+    "file": "012_Atk_Cramorant.png",
+    "name": "012Cramorant",
+    "role": "Atk"
+  },
+  {
+    "file": "013_Spd_Absol.png",
+    "name": "013Absol",
+    "role": "Spd"
+  },
+  {
+    "file": "014_Bal_Garchomp.png",
+    "name": "014Garchomp",
+    "role": "Bal"
+  },
+  {
+    "file": "015_Bal_Lucario.png",
+    "name": "015Lucario",
+    "role": "Bal"
+  },
+  {
+    "file": "016_Def_Crustle.png",
+    "name": "016Crustle",
+    "role": "Def"
+  },
+  {
+    "file": "017_Atk_Greninja.png",
+    "name": "017Greninja",
+    "role": "Atk"
+  },
+  {
+    "file": "018_Spd_Talonflame.png",
+    "name": "018Talonflame",
+    "role": "Spd"
+  },
+  {
+    "file": "019_Spd_Zeraora.png",
+    "name": "019Zeraora",
+    "role": "Spd"
+  },
+  {
+    "file": "020_Atk_Cinderace.png",
+    "name": "020Cinderace",
+    "role": "Atk"
+  },
+  {
+    "file": "021_Atk_Gardevoir.png",
+    "name": "021Gardevoir",
+    "role": "Atk"
+  },
+  {
+    "file": "022_Sup_Blissey.png",
+    "name": "022Blissey",
+    "role": "Sup"
+  },
+  {
+    "file": "023_Def_Blastoise.jfif",
+    "name": "023Blastoise",
+    "role": "Def"
+  },
+  {
+    "file": "024_Def_Mamoswine.png",
+    "name": "024Mamoswine",
+    "role": "Def"
+  },
+  {
+    "file": "025_Atk_Sylveon.jfif",
+    "name": "025Sylveon",
+    "role": "Atk"
+  },
+  {
+    "file": "026_Def_Greedent.jfif",
+    "name": "026Greedent",
+    "role": "Def"
+  },
+  {
+    "file": "027_Atk_Decidueye.jfif",
+    "name": "027Decidueye",
+    "role": "Atk"
+  },
+  {
+    "file": "028_Bal_Tsareena.jpg",
+    "name": "028Tsareena",
+    "role": "Bal"
+  },
+  {
+    "file": "029_Bal_Dragonite.jfif",
+    "name": "029Dragonite",
+    "role": "Bal"
+  },
+  {
+    "file": "030_Def_Trevenant.png",
+    "name": "030Trevenant",
+    "role": "Def"
+  },
+  {
+    "file": "031_Bal_Aegislash.png",
+    "name": "031Aegislash",
+    "role": "Bal"
+  },
+  {
+    "file": "032_Sup_Hoopa.png",
+    "name": "032Hoopa",
+    "role": "Sup"
+  },
+  {
+    "file": "033_Atk_Duraludon.png",
+    "name": "033Duraludon",
+    "role": "Atk"
+  },
+  {
+    "file": "034_Bal_Azumarill.png",
+    "name": "034Azumarill",
+    "role": "Bal"
+  },
+  {
+    "file": "035_Atk_Espeon.png",
+    "name": "035Espeon",
+    "role": "Atk"
+  },
+  {
+    "file": "036_Atk_Delphox.png",
+    "name": "036Delphox",
+    "role": "Atk"
+  },
+  {
+    "file": "037_Atk_Glaceon.png",
+    "name": "037Glaceon",
+    "role": "Atk"
+  },
+  {
+    "file": "038_Bal_Buzzwole.png",
+    "name": "038Buzzwole",
+    "role": "Bal"
+  },
+  {
+    "file": "039_Bal_Tyranitar.png",
+    "name": "039Tyranitar",
+    "role": "Bal"
+  },
+  {
+    "file": "040_Atk_Mew.png",
+    "name": "040Mew",
+    "role": "Atk"
+  },
+  {
+    "file": "041_Spd_Dodrio.png",
+    "name": "041Dodrio",
+    "role": "Spd"
+  },
+  {
+    "file": "042_Bal_Scizor.png",
+    "name": "042Scizor",
+    "role": "Bal"
+  },
+  {
+    "file": "043_Sup_Clefable.png",
+    "name": "043Clefable",
+    "role": "Sup"
+  },
+  {
+    "file": "044_Atk_Zoroark.png",
+    "name": "044Zoroark",
+    "role": "Atk"
+  },
+  {
+    "file": "045_Spd_Sableye.png",
+    "name": "045Sableye",
+    "role": "Spd"
+  },
+  {
+    "file": "046_Bal_Urshifu.png",
+    "name": "046Urshifu",
+    "role": "Bal"
+  },
+  {
+    "file": "047_Atk_Dragapult.png",
+    "name": "047Dragapult",
+    "role": "Atk"
+  },
+  {
+    "file": "048_Sup_Comfey.png",
+    "name": "048Comfey",
+    "role": "Sup"
+  },
+  {
+    "file": "049_Bal_Zacian.PNG",
+    "name": "049Zacian",
+    "role": "Bal"
+  },
+  {
+    "file": "050_Def_Goodra.png",
+    "name": "050Goodra",
+    "role": "Def"
+  },
+  {
+    "file": "051_Def_Lapras.png",
+    "name": "051Lapras",
+    "role": "Def"
+  },
+  {
+    "file": "052_Atk_Chandelure.png",
+    "name": "052Chandelure",
+    "role": "Atk"
+  },
+  {
+    "file": "053_Def_Umbreon.png",
+    "name": "053Umbreon",
+    "role": "Def"
+  },
+  {
+    "file": "054_Spd_Leafeon.png",
+    "name": "054Leafeon",
+    "role": "Spd"
+  },
+  {
+    "file": "055_Atk_Inteleon.png",
+    "name": "055Inteleon",
+    "role": "Atk"
+  },
+  {
+    "file": "056_Bal_MewtwoX.png",
+    "name": "056MewtwoX",
+    "role": "Bal"
+  },
+  {
+    "file": "057_Atk_MewtwoY.png",
+    "name": "057MewtwoY",
+    "role": "Atk"
+  },
+  {
+    "file": "058_Atk_Blaziken.png",
+    "name": "058Blaziken",
+    "role": "Atk"
+  },
+  {
+    "file": "059_Bal_Mimikyu.png",
+    "name": "059Mimikyu",
+    "role": "Bal"
+  },
+  {
+    "file": "060_Bal_Metagross.png",
+    "name": "060Metagross",
+    "role": "Bal"
+  },
+  {
+    "file": "061_Spd_Meowscarada.png",
+    "name": "061Meowscarada",
+    "role": "Spd"
+  },
+  {
+    "file": "062_Atk_Gyarados.png",
+    "name": "062Gyarados",
+    "role": "Atk"
+  },
+  {
+    "file": "063_Atk_Miraidon.png",
+    "name": "063Miraidon",
+    "role": "Atk"
+  },
+  {
+    "file": "064_Bal_Falinks.png",
+    "name": "064Falinks",
+    "role": "Bal"
+  },
+  {
+    "file": "065_Bal_Ceruledge.png",
+    "name": "065Ceruledge",
+    "role": "Bal"
+  },
+  {
+    "file": "066_Sup_HoOh.png",
+    "name": "066HoOh",
+    "role": "Sup"
+  },
+  {
+    "file": "067_Atk_Armarouge.png",
+    "name": "067Armarouge",
+    "role": "Atk"
+  },
+  {
+    "file": "068_Spd_Darkrai.png",
+    "name": "068Darkrai",
+    "role": "Spd"
+  },
+  {
+    "file": "069_Sup_Psyduck.png",
+    "name": "069Psyduck",
+    "role": "Sup"
+  },
+  {
+    "file": "070_Bal_Tinkaton.png",
+    "name": "070Tinkaton",
+    "role": "Bal"
+  },
+  {
+    "file": "071_Spd_GalarianRapidash.png",
+    "name": "071GalarianRapidash",
+    "role": "Spd"
+  },
+  {
+    "file": "072_Def_Suicune.png",
+    "name": "072Suicune",
+    "role": "Def"
+  },
+  {
+    "file": "073_Atk_AlolanRaichu.png",
+    "name": "073AlolanRaichu",
+    "role": "Atk"
+  },
+  {
+    "file": "074_Sup_Alcremie.png",
+    "name": "074Alcremie",
+    "role": "Sup"
+  },
+  {
+    "file": "075_Atk_Latios.png",
+    "name": "075Latios",
+    "role": "Atk"
+  },
+  {
+    "file": "076_Sup_Latias.png",
+    "name": "076Latias",
+    "role": "Sup"
+  },
+  {
+    "file": "077_Bal_Pawmot.png",
+    "name": "077Pawmot",
+    "role": "Bal"
+  },
+  {
+    "file": "078_Bal_Empoleon.png",
+    "name": "078Empoleon",
+    "role": "Bal"
+  },
+  {
+    "file": "079_Bal_MegaLucario.png",
+    "name": "079MegaLucario",
+    "role": "Bal"
+  },
+  {
+    "file": "080_Bal_MegaCharizardX.png",
+    "name": "080MegaCharizardX",
+    "role": "Bal"
+  },
+  {
+    "file": "081_Def_Dhelmise.png",
+    "name": "081Dhelmise",
+    "role": "Def"
+  },
+  {
+    "file": "082_Atk_Vaporeon.png",
+    "name": "082Vaporeon",
+    "role": "Atk"
+  },
+  {
+    "file": "083_Atk_MegaGyarados.png",
+    "name": "083MegaGyarados",
+    "role": "Atk"
+  },
+  {
+    "file": "084_Atk_MegaCharizardY.png",
+    "name": "084MegaCharizardY",
+    "role": "Atk"
+  },
+  {
+    "file": "085_Atk_Meowth.png",
+    "name": "085Meowth",
+    "role": "Atk"
+  },
+  {
+    "file": "086_Bal_Sirfetchd.png",
+    "name": "086Sirfetchd",
+    "role": "Bal"
+  },
+  {
+    "file": "087_Atk_Zapdos.png",
+    "name": "087Zapdos",
+    "role": "Atk"
+  },
+  {
+    "file": "088_Atk_Moltres.png",
+    "name": "088Moltres",
+    "role": "Atk"
+  },
+  {
+    "file": "089_Sup_Articuno.png",
+    "name": "089Articuno",
+    "role": "Sup"
+  },
+  {
+    "file": "090_Atk_Typhlosion.png",
+    "name": "090Typhlosion",
+    "role": "Atk"
+  },
+  {
+    "file": "091_Bal_Feraligatr.png",
+    "name": "091Feraligatr",
+    "role": "Bal"
+  }
+]

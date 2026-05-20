@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>UNITE ランダムドラフト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==== 条件設定画面 ==== -->
+<section id="view-setup" class="view active">
+  <div class="setup-wrap">
+    <div class="setup-title">Random Draft</div>
+    <div class="setup-row">
+      <label class="setup-q">Pick Count</label>
+      <div class="num-picker">
+        <button type="button" class="num-btn" id="pickDec">−</button>
+        <div class="num-display" id="pickCount">10</div>
+        <button type="button" class="num-btn" id="pickInc">+</button>
+      </div>
+    </div>
+    <div class="setup-row roles">
+      <label class="setup-q">Role</label>
+      <div class="radio-group" id="roleGroup">
+        <label class="radio"><input type="checkbox" class="role-cb" value="Atk" checked><span>アタック型</span></label>
+        <label class="radio"><input type="checkbox" class="role-cb" value="Spd" checked><span>スピード型</span></label>
+        <label class="radio"><input type="checkbox" class="role-cb" value="Def" checked><span>ディフェンス型</span></label>
+        <label class="radio"><input type="checkbox" class="role-cb" value="Sup" checked><span>サポート型</span></label>
+        <label class="radio"><input type="checkbox" class="role-cb" value="Bal" checked><span>バランス型</span></label>
+        <label class="radio"><input type="checkbox" id="roleAll" checked><span>全て</span></label>
+      </div>
+    </div>
+    <div class="setup-row">
+      <label class="setup-q">Global BAN</label>
+      <button type="button" id="banOpenBtn" class="btn-ban">
+        <span>BAN設定</span>
+        <span class="ban-count" id="banCount">0</span>
+      </button>
+    </div>
+    <div class="setup-row center">
+      <button id="startBtn" class="btn-start">スタート</button>
+    </div>
+    <div class="setup-info" id="setupInfo"></div>
+  </div>
+</section>
+
+<!-- ==== Global BAN 画面 ==== -->
+<section id="view-ban" class="view">
+  <div class="ban-wrap">
+    <div class="ban-head">
+      <div class="ban-title">Global BAN</div>
+      <div class="ban-status" id="banStatus"></div>
+      <button id="banClearBtn" class="btn-mini">全解除</button>
+      <button id="banDoneBtn"  class="btn-mini accent">完了</button>
+    </div>
+    <div class="ban-grid" id="banGrid"></div>
+  </div>
+</section>
+
+<!-- ==== ドラフト画面 ==== -->
+<section id="view-draft" class="view">
+  <div class="draft-grid">
+    <!-- 上スロット (1,4,5,8,9 の順で並ぶ) -->
+    <div class="slot-row top" id="rowTop"></div>
+
+    <!-- 中央: 抽選プール -->
+    <div class="pool-wrap">
+      <div class="pool" id="pool"></div>
+    </div>
+
+    <!-- 下スロット (2,3,6,7,10 の順で並ぶ) -->
+    <div class="slot-row bottom" id="rowBottom"></div>
+
+    <!-- 操作ボタン -->
+    <div class="draft-actions">
+      <button id="resetBtn"   class="btn-mini">リセット</button>
+      <button id="rerollBtn"  class="btn-mini">再抽選</button>
+      <button id="backBtn"    class="btn-mini">条件へ戻る</button>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

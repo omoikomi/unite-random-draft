@@ -93,13 +93,15 @@ html, body {
 
 /* 数値ピッカー */
 .num-picker {
-  display: inline-flex;
+  display: flex;
   align-items: stretch;
+  align-self: flex-start;
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: 10px;
   height: 54px;
-  width: fit-content;
+  width: 340px;
+  overflow: hidden;
 }
 .num-picker:hover { border-color: var(--border-hi); }
 .num-btn {

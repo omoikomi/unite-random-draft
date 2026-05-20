@@ -26,6 +26,20 @@ const state = {
 
 const MIN_PICK = 1;
 
+// 1..5 と 10+ のみ許可 (6..9 は飛ばす)
+function stepPick(cur, dir) {
+  const maxN = Math.max(MIN_PICK, availablePool().length);
+  let n = cur + dir;
+  if (dir > 0) {
+    if (n >= 6 && n <= 9) n = 10;
+  } else {
+    if (n >= 6 && n <= 9) n = 5;
+  }
+  if (n < MIN_PICK) n = MIN_PICK;
+  if (n > maxN) n = maxN;
+  return n;
+}
+
 // ── 起動 ─────────────────────────────────────────────
 (async function init() {
   try {
@@ -47,9 +61,13 @@ function rebuildSetup() {
   const maxN = Math.max(MIN_PICK, available.length);
   if (state.pickCount < MIN_PICK) state.pickCount = MIN_PICK;
   if (state.pickCount > maxN) state.pickCount = maxN;
+  // 不正値 (6..9) なら 5 に丸める
+  if (state.pickCount >= 6 && state.pickCount <= 9) state.pickCount = 5;
   document.getElementById("pickCount").textContent = state.pickCount;
   document.getElementById("pickDec").disabled = state.pickCount <= MIN_PICK;
-  document.getElementById("pickInc").disabled = state.pickCount >= maxN;
+  // 5 から先は 10 に飛ぶ → maxN<10 で5なら inc 不可
+  const canInc = state.pickCount < maxN && !(state.pickCount === 5 && maxN < 10);
+  document.getElementById("pickInc").disabled = !canInc;
 
   const roleLabel = state.roles.size === ALL_ROLES.length
     ? "全て"
@@ -64,12 +82,11 @@ function rebuildSetup() {
 
 function bindSetup() {
   document.getElementById("pickDec").addEventListener("click", () => {
-    state.pickCount = Math.max(MIN_PICK, state.pickCount - 1);
+    state.pickCount = stepPick(state.pickCount, -1);
     rebuildSetup();
   });
   document.getElementById("pickInc").addEventListener("click", () => {
-    const maxN = Math.max(MIN_PICK, availablePool().length);
-    state.pickCount = Math.min(maxN, state.pickCount + 1);
+    state.pickCount = stepPick(state.pickCount, +1);
     rebuildSetup();
   });
   document.getElementById("banOpenBtn").addEventListener("click", openBan);

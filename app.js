@@ -238,17 +238,16 @@ function renderDraft() {
   const total = state.pickCount;
   const draftView = document.getElementById("view-draft");
   if (total < 10) {
-    // 単列モード: 上行のみ、1..total を順番に表示
     draftView.classList.add("single-row");
     for (let i = 1; i <= total; i++) rowTop.appendChild(buildSlot(i));
-    rowTop.appendChild(buildRandomBtns());
   } else {
-    // 通常モード: TOP_ORDER / BOTTOM_ORDER の順
     draftView.classList.remove("single-row");
     for (const idx of TOP_ORDER)    if (idx <= total) rowTop.appendChild(buildSlot(idx));
     for (const idx of BOTTOM_ORDER) if (idx <= total) rowBottom.appendChild(buildSlot(idx));
-    rowBottom.appendChild(buildRandomBtns());
   }
+  const randomRow = document.getElementById("randomRow");
+  randomRow.innerHTML = "";
+  randomRow.appendChild(buildRandomBtns());
 
   const pool = document.getElementById("pool");
   pool.innerHTML = "";

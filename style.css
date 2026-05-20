@@ -539,11 +539,16 @@ html, body {
 #view-draft.single-row .slot-row.bottom { display: none; }
 
 /* ランダムピックボタン */
+.random-row {
+  display: flex;
+  justify-content: center;
+}
 .random-btns {
   display: inline-flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  gap: 12px;
 }
+#view-draft.single-row .random-row { /* 単列モードでも同じ扱い */ }
 .random-btn {
   display: inline-flex;
   align-items: center;

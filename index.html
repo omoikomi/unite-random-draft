@@ -73,7 +73,10 @@
     <!-- 下スロット (2,3,6,7,10 の順で並ぶ) -->
     <div class="slot-row bottom" id="rowBottom"></div>
 
-    <!-- ランダムピックボタン (位置はJSで slot10 の隣に挿入) -->
+    <!-- ランダムピックボタン行 -->
+    <div class="random-row" id="randomRow"></div>
+
+    <!-- ランダムピックボタン本体 (テンプレートからクローン) -->
     <template id="randomBtnsTemplate">
       <div class="random-btns">
         <button type="button" id="oneRandomBtn" class="random-btn">

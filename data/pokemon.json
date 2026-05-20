@@ -215,14 +215,14 @@
     "role": "Sup"
   },
   {
-    "file": "044_Atk_Zoroark.png",
+    "file": "044_Spd_Zoroark.png",
     "name": "044Zoroark",
-    "role": "Atk"
+    "role": "Spd"
   },
   {
-    "file": "045_Spd_Sableye.png",
+    "file": "045_Sup_Sableye.png",
     "name": "045Sableye",
-    "role": "Spd"
+    "role": "Sup"
   },
   {
     "file": "046_Bal_Urshifu.png",
@@ -285,9 +285,9 @@
     "role": "Atk"
   },
   {
-    "file": "058_Atk_Blaziken.png",
+    "file": "058_Bal_Blaziken.png",
     "name": "058Blaziken",
-    "role": "Atk"
+    "role": "Bal"
   },
   {
     "file": "059_Bal_Mimikyu.png",
@@ -305,9 +305,9 @@
     "role": "Spd"
   },
   {
-    "file": "062_Atk_Gyarados.png",
+    "file": "062_Bal_Gyarados.png",
     "name": "062Gyarados",
-    "role": "Atk"
+    "role": "Bal"
   },
   {
     "file": "063_Atk_Miraidon.png",
@@ -325,9 +325,9 @@
     "role": "Bal"
   },
   {
-    "file": "066_Sup_HoOh.png",
+    "file": "066_Def_HoOh.png",
     "name": "066HoOh",
-    "role": "Sup"
+    "role": "Def"
   },
   {
     "file": "067_Atk_Armarouge.png",
@@ -355,9 +355,9 @@
     "role": "Spd"
   },
   {
-    "file": "072_Def_Suicune.png",
+    "file": "072_Bal_Suicune.png",
     "name": "072Suicune",
-    "role": "Def"
+    "role": "Bal"
   },
   {
     "file": "073_Atk_AlolanRaichu.png",
@@ -400,29 +400,29 @@
     "role": "Bal"
   },
   {
-    "file": "081_Def_Dhelmise.png",
+    "file": "081_Bal_Dhelmise.png",
     "name": "081Dhelmise",
+    "role": "Bal"
+  },
+  {
+    "file": "082_Def_Vaporeon.png",
+    "name": "082Vaporeon",
     "role": "Def"
   },
   {
-    "file": "082_Atk_Vaporeon.png",
-    "name": "082Vaporeon",
-    "role": "Atk"
-  },
-  {
-    "file": "083_Atk_MegaGyarados.png",
+    "file": "083_Bal_MegaGyarados.png",
     "name": "083MegaGyarados",
-    "role": "Atk"
+    "role": "Bal"
   },
   {
-    "file": "084_Atk_MegaCharizardY.png",
+    "file": "084_Bal_MegaCharizardY.png",
     "name": "084MegaCharizardY",
-    "role": "Atk"
+    "role": "Bal"
   },
   {
-    "file": "085_Atk_Meowth.png",
+    "file": "085_Spd_Meowth.png",
     "name": "085Meowth",
-    "role": "Atk"
+    "role": "Spd"
   },
   {
     "file": "086_Bal_Sirfetchd.png",
@@ -435,14 +435,14 @@
     "role": "Atk"
   },
   {
-    "file": "088_Atk_Moltres.png",
+    "file": "088_Bal_Moltres.png",
     "name": "088Moltres",
-    "role": "Atk"
+    "role": "Bal"
   },
   {
-    "file": "089_Sup_Articuno.png",
+    "file": "089_Def_Articuno.png",
     "name": "089Articuno",
-    "role": "Sup"
+    "role": "Def"
   },
   {
     "file": "090_Atk_Typhlosion.png",

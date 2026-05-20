@@ -271,14 +271,24 @@ function refreshSlots(flashSel) {
   document.querySelectorAll(".slot").forEach(s => {
     const idx = parseInt(s.dataset.sel, 10);
     const pick = state.picks[idx - 1];
+    const wasFilled = s.classList.contains("filled");
     s.classList.toggle("filled", !!pick);
-    s.querySelectorAll("img").forEach(n => n.remove());
+
     if (pick) {
-      const img = document.createElement("img");
-      img.src = `assets/characters/${encodeURIComponent(pick.file)}`;
-      img.alt = pick.name;
-      s.appendChild(img);
+      // 既に同じ画像が入っているなら DOM を作り直さない (再アニメ防止)
+      const existing = s.querySelector("img");
+      const want = `assets/characters/${encodeURIComponent(pick.file)}`;
+      if (!existing || !existing.getAttribute("src").endsWith(encodeURIComponent(pick.file))) {
+        s.querySelectorAll("img").forEach(n => n.remove());
+        const img = document.createElement("img");
+        img.src = want;
+        img.alt = pick.name;
+        s.appendChild(img);
+      }
+    } else {
+      s.querySelectorAll("img").forEach(n => n.remove());
     }
+
     if (flashSel && idx === flashSel) {
       s.classList.remove("flash");
       void s.offsetWidth; // reflow
